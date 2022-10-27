@@ -16,9 +16,9 @@ def guessingStudentName():
     elif inputYear == 'sp':
         spFind()
     elif inputYear == 'jn':
-        pass
+        juniorsFind()
     elif inputYear == 'sn':
-        pass 
+        seniorsFind() 
 
 def guessingTeacherName():
     pass
