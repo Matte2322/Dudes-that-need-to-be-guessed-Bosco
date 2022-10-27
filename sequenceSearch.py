@@ -105,16 +105,19 @@ def spFind():
         randomStudentSophomore5 = random.choice(sophomoreListACE)
         answer = input(f'Is your name {randomStudentSophomore5}?: ')
         if answer == 'y' or answer == 'yes':
-          print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore5} and you're in the technology BMET. You're a sophomore btw.")
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore5} and you're in the technology ACE. You're a sophomore btw.")
           break
         else: 
-          continue
-
-      
-          
+          continue        
 
 def juniorsFind():
   pass
 
 def seniorsFind():
+  pass
+
+def academicsFind():
+  pass
+
+def techsFind():
   pass
