@@ -50,7 +50,20 @@ def spFind():
         else:
           continue
   elif iForgor == 'MAT':
-    pass 
+    while True:
+      for wake in range(3):
+        time.sleep(0.3) 
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/IDEA/soph', 'r') as techSophomores2:
+        sophomoreListMAT = [sophomoreListMAT.rstrip() for sophomoreListMAT in techSophomores2]
+        randomStudentSophomore2 = random.choice(sophomoreListMAT)
+        answer = input(f"Is your name {randomStudentSophomore2}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore2} and you're in the technology MAT. You're a sophomore btw.")
+        else: 
+          continue
+          
 
 def juniorsFind():
   pass
