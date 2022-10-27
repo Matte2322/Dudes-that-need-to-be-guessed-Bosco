@@ -43,6 +43,10 @@ def students(inputStuff):
     print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
     guessingStudentName()
 
+def teachers(inputStuff):
+    pass
+teachers(inputRole)
+
         
 students(inputRole)
 
