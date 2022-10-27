@@ -28,7 +28,7 @@ def students(inputStuff):
     global answer
     global guesses
 
-    technologyDepartments = ['ACE','CSEE', 'BMET', 'IDEA', 'MAT', 'MSET']
+    technologyDepartments = ['ACE', 'CSEE', 'BMET', 'IDEA', 'MAT', 'MSET']
     if inputStuff == 's' or inputStuff == 'S' or inputStuff == 'Student' or inputStuff =='student':
         freshieTest = input("Are you a freshie?: ")
         while answer != 'y':
@@ -39,7 +39,7 @@ def students(inputStuff):
                 time.sleep(0.5)
                 print('.')
             guesses+=1
-            randomTech = random.sample(technologyDepartments, k=1)
+            randomTech = random.sample(technologyDepartments, 1)
             answer = input('Is your technology ' + str(randomTech) + "?: ")
     print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
     guessingStudentName()
