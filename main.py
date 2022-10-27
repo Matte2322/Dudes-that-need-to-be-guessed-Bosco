@@ -28,7 +28,7 @@ def students(inputStuff):
     global guesses
 
     technologyDepartments = ['ACE','CSEE', 'BMET', 'IDEA', 'MAT', 'MSET']
-    if inputRole == 's' or inputRole == 'S' or inputRole == 'Student' or inputRole =='student':
+    if inputStuff == 's' or inputStuff == 'S' or inputStuff == 'Student' or inputStuff =='student':
         freshieTest = input("Are you a freshie?: ")
         while answer != 'y':
             if freshieTest == 'y' or freshieTest == 'yes':
