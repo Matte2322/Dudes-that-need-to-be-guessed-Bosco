@@ -63,6 +63,35 @@ def spFind():
           print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore2} and you're in the technology MAT. You're a sophomore btw.")
         else: 
           continue
+  elif iForgor == 'MSET':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3) 
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/MSET/soph', 'r') as techSophomores3:
+        sophomoreListMSET = [sophomoreListMSET.rstrip() for sophomoreListMSET in techSophomores3]
+        randomStudentSophomore3 = random.choice(sophomoreListMSET)
+        answer = input(f"Is your name {randomStudentSophomore3}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore3} and you're in the technology MSET. You're a sophomore btw.")
+        else: 
+          continue
+  elif iForgor == 'BMET':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3) 
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/BMET/soph', 'r') as techSophomores4:
+        sophomoreListBMET = [sophomoreListBMET.rstrip() for sophomoreListBMET in techSophomores4]
+        randomStudentSophomore4 = random.choice(sophomoreListBMET)
+        answer = input(f"Is your name {randomStudentSophomore4}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore4} and you're in the technology BMET. You're a sophomore btw.")
+        else: 
+          continue
+      
           
 
 def juniorsFind():
