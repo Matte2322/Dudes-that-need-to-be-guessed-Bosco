@@ -1,7 +1,6 @@
 import random, time 
 from openFiles import *
 from sequenceSearch import *
-from random import sample
 
 answer = 'n'
 guesses = 0
