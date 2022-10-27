@@ -61,6 +61,7 @@ def spFind():
         answer = input(f"Is your name {randomStudentSophomore2}?: ")
         if answer == 'y' or answer == 'yes':
           print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore2} and you're in the technology MAT. You're a sophomore btw.")
+          break
         else: 
           continue
   elif iForgor == 'MSET':
@@ -75,6 +76,7 @@ def spFind():
         answer = input(f"Is your name {randomStudentSophomore3}?: ")
         if answer == 'y' or answer == 'yes':
           print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore3} and you're in the technology MSET. You're a sophomore btw.")
+          break
         else: 
           continue
   elif iForgor == 'BMET':
@@ -89,6 +91,7 @@ def spFind():
         answer = input(f"Is your name {randomStudentSophomore4}?: ")
         if answer == 'y' or answer == 'yes':
           print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore4} and you're in the technology BMET. You're a sophomore btw.")
+          break
         else: 
           continue
       
