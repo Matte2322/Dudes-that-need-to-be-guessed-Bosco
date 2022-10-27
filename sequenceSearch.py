@@ -94,6 +94,22 @@ def spFind():
           break
         else: 
           continue
+  elif iForgor == 'ACE':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/ACE/soph', 'r') as techSophomores5:
+        sophomoreListACE = [sophomoreListACE.rstrip() for sophomoreListACE in techSophomores5]
+        randomStudentSophomore5 = random.choice(sophomoreListACE)
+        answer = input(f'Is your name {randomStudentSophomore5}?: ')
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore5} and you're in the technology BMET. You're a sophomore btw.")
+          break
+        else: 
+          continue
+
       
           
 
