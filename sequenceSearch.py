@@ -51,3 +51,9 @@ def spFind():
           continue
   elif iForgor == 'MAT':
     pass 
+
+def juniorsFind():
+  pass
+
+def seniorsFind():
+  pass
