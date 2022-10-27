@@ -55,7 +55,7 @@ def spFind():
         time.sleep(0.3) 
         print('.')
       guesses+=1
-      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/IDEA/soph', 'r') as techSophomores2:
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/MAT/soph', 'r') as techSophomores2:
         sophomoreListMAT = [sophomoreListMAT.rstrip() for sophomoreListMAT in techSophomores2]
         randomStudentSophomore2 = random.choice(sophomoreListMAT)
         answer = input(f"Is your name {randomStudentSophomore2}?: ")
