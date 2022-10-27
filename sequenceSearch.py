@@ -11,7 +11,7 @@ def freshFind():
     randomStudentFresh = random.choice(freshlist)
     answer = input('Is your name ' + randomStudentFresh + '?: ')
     if answer == 'y' or answer == 'yes':
-      print("It took me " + str(guesses) + "guess(es) to find your name is " + randomStudentFresh + " and you have no technologies lol. Typical freshie")
+      print("It took me " + str(guesses) + " guess(es) to find your name is " + randomStudentFresh + " and you have no technologies lol. Typical freshie")
       break
     else:
       continue
