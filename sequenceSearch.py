@@ -1,5 +1,4 @@
 import random, time
-from binarySearch import binary_search
 from openFiles import *
 
 def freshFind():
