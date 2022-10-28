@@ -1,4 +1,5 @@
 import random, time
+from binarySearch import binary_search
 from openFiles import *
 
 def freshFind():
@@ -111,7 +112,23 @@ def spFind():
           continue        
 
 def juniorsFind():
-  pass
+  guesses = 0
+  iForgor = input("Sorry, what is your tech again?: ")
+  if iForgor == 'CSEE':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/CSEE/juniors', 'r') as techJuniors:
+        juniorsListCSEE = [juniorsListCSEE.rstrip() for juniorsListCSEE in techJuniors]
+        randomStudentJuniors = random.choice(juniorsListCSEE)
+        answer = input(f'Is your name {randomStudentJuniors}?: ')
+        if answer and binary_search(juniorsListCSEE, answer) == 'True':
+          print(f"Your name is {randomStudentJuniors} and it took me {guesses} guess(es) to find your name. Your tech is CSEE btw :>" )
+        else:
+          continue
+
 
 def seniorsFind():
   pass
