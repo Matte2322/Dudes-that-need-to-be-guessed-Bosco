@@ -23,6 +23,11 @@ def guessingStudentName():
 
 def guessingTeacherName():
     global guesses 
+    inputTeacher = input("Gotta ask you again, tech or academic?: ")
+    if inputTeacher == 'tech':
+        techsFind()
+    elif inputTeacher == 'academic':
+        academicsFind()
 
 def students(inputStuff):
     global answer
@@ -41,8 +46,9 @@ def students(inputStuff):
             guesses+=1
             randomTech = random.sample(technologyDepartments, k=1)
             answer = input('Is your technology ' + str(randomTech) + "?: ")
-    print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
-    guessingStudentName()
+            print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
+    if answer:
+        guessingStudentName()
 
 def teachers(inputStuff): 
     if inputStuff == 't' or inputStuff == 'T' or inputStuff == 'teacher' or inputStuff == 'Teacher':
@@ -54,6 +60,9 @@ def teachers(inputStuff):
             elif categoryTestDeparments == 'tech teacher' or categoryTestDeparments == 'tech':
                 print("You are a tech teacher.")
                 break
+                
+            if categoryTestDeparments:
+                guessingTeacherName()
 
 teachers(inputRole)
 
