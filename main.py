@@ -1,4 +1,5 @@
-import random, time 
+import random, time
+from unicodedata import category 
 from openFiles import *
 from sequenceSearch import *
 
@@ -44,7 +45,16 @@ def students(inputStuff):
     guessingStudentName()
 
 def teachers(inputStuff):
-    pass
+    global answer 
+
+    if inputStuff == 't' or inputStuff == 'T' or inputStuff == 'teacher' or inputStuff == 'Teacher':
+        categoryTestDeparments = input("Are you an academic teacher or a tech teacher?: ")
+        while True:
+            if categoryTestDeparments == "academic teacher" or categoryTestDeparments == 'academic':
+                break
+            elif categoryTestDeparments == 'tech teacher' or categoryTestDepartments == 'tech':
+                break
+
 teachers(inputRole)
 
         
