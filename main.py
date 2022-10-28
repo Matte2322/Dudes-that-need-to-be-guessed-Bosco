@@ -22,7 +22,7 @@ def guessingStudentName():
         seniorsFind() 
 
 def guessingTeacherName():
-    pass
+    global guesses 
 
 def students(inputStuff):
     global answer
@@ -44,9 +44,7 @@ def students(inputStuff):
     print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
     guessingStudentName()
 
-def teachers(inputStuff):
-    global answer 
-
+def teachers(inputStuff): 
     if inputStuff == 't' or inputStuff == 'T' or inputStuff == 'teacher' or inputStuff == 'Teacher':
         categoryTestDeparments = input("Are you an academic teacher or a tech teacher?: ")
         while True:
