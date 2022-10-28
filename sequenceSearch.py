@@ -124,8 +124,9 @@ def juniorsFind():
         juniorsListCSEE = [juniorsListCSEE.rstrip() for juniorsListCSEE in techJuniors]
         randomStudentJuniors = random.choice(juniorsListCSEE)
         answer = input(f'Is your name {randomStudentJuniors}?: ')
-        if answer and binary_search(juniorsListCSEE, answer) == 'True':
+        if answer == 'y' or answer=='yes':
           print(f"Your name is {randomStudentJuniors} and it took me {guesses} guess(es) to find your name. Your tech is CSEE btw :>" )
+          break
         else:
           continue
 
