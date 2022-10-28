@@ -201,7 +201,7 @@ def juniorsFind():
         randomStudentJunior5 = random.choice(juniorsListACE)
         answer = input(f"Is your name {randomStudentJunior5}?: ")
         if answer == 'y' or answer == 'yes':
-          print(f"Your name is {randomStudentJunior5} and it took me {guesses} guess(es) to determine your name. You're a junior while being in BMET.")
+          print(f"Your name is {randomStudentJunior5} and it took me {guesses} guess(es) to determine your name. You're a junior while being in ACE.")
           break
         else:
           continue
