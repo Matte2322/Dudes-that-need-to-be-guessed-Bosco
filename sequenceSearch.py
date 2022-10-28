@@ -190,6 +190,21 @@ def juniorsFind():
           break
         else:
           continue
+  elif iForgor == "ACE":
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1 
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/ACE/juniors', 'r') as techJuniors5:
+        juniorsListACE = [juniorsListBMET.rstrip() for juniorsListBMET in techJuniors5]
+        randomStudentJunior5 = random.choice(juniorsListACE)
+        answer = input(f"Is your name {randomStudentJunior5}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"Your name is {randomStudentJunior5} and it took me {guesses} guess(es) to determine your name. You're a junior while being in BMET.")
+          break
+        else:
+          continue
 
 def seniorsFind():
   pass
