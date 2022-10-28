@@ -156,7 +156,22 @@ def juniorsFind():
         randomStudentJuniors2 = random.choice(juniorsListMAT)
         answer = input(f"Is your name {randomStudentJuniors2}?: ")
         if answer == 'yes' or answer == 'y':
-          print(f'Your name is {randomStudentJuniors2} and you belong in the technology MAT as a junior.')
+          print(f'Your name is {randomStudentJuniors2} and you belong in the technology MAT as a junior. Took me {guesses} guess(es) to figure you out.')
+          break
+        else:
+          continue
+  elif iForgor == 'MSET':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1 
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/MSET/juniors', 'r') as techJuniors3:
+        juniorsListMSET = [juniorsListMSET.rstrip() for juniorsListMSET in techJuniors3]
+        randomStudentJunior3 = random.choice(juniorsListMSET)
+        answer = input(f'Is your name {randomStudentJunior3}?: ')
+        if answer == 'yes' or answer == 'y':
+          print(f'Okay, your name is {randomStudentJunior3} and you\'re in the technology MSET. You\'re a junior, too. So I guess a W?')
           break
         else:
           continue
