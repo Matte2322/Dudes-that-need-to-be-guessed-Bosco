@@ -3,7 +3,6 @@ from unicodedata import category
 from openFiles import *
 from sequenceSearch import *
 
-answer = 'n'
 guesses = 0
 
 print("Welcome to the Bosco Loving Guessing Game for KIDS!")
@@ -29,27 +28,6 @@ def guessingTeacherName():
     elif inputTeacher == 'academic':
         academicsFind()
 
-def students(inputStuff):
-    global testing
-    global guesses
-
-    technologyDepartments = ['ACE', 'CSEE', 'BMET', 'IDEA', 'MAT', 'MSET']
-    if inputStuff == 's' or inputStuff == 'S' or inputStuff == 'Student' or inputStuff =='student':
-        freshieTest = input("Are you a freshie?: ")
-        while testing != 'y':
-            if freshieTest == 'y' or freshieTest == 'yes':
-                print("Ew, a freshie.")
-                break
-            for wake in range(3):
-                time.sleep(0.5)
-                print('.')
-            guesses+=1
-            randomTech = random.sample(technologyDepartments, k=1)
-            testing = input('Is your technology ' + str(randomTech) + "?: ")
-            print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
-    if testing:
-        guessingStudentName()
-
 def teachers(inputStuff): 
     if inputStuff == 't' or inputStuff == 'T' or inputStuff == 'teacher' or inputStuff == 'Teacher':
         categoryTestDeparments = input("Are you an academic teacher or a tech teacher?: ")
@@ -62,6 +40,28 @@ def teachers(inputStuff):
                 break
         if categoryTestDeparments:
             guessingTeacherName()
+
+
+def students(inputStuff):
+    urAnswer = 'n'
+    global guesses
+
+    technologyDepartments = ['ACE', 'CSEE', 'BMET', 'IDEA', 'MAT', 'MSET']
+    if inputStuff == 's' or inputStuff == 'S' or inputStuff == 'Student' or inputStuff =='student':
+        freshieTest = input("Are you a freshie?: ")
+        while urAnswer != 'y':
+            if freshieTest == 'y' or freshieTest == 'yes':
+                print("Ew, a freshie.")
+                break
+            for wake in range(3):
+                time.sleep(0.5)
+                print('.')
+            guesses+=1
+            randomTech = random.sample(technologyDepartments, k=1)
+            urAnswer = input('Is your technology ' + str(randomTech) + "?: ")
+            print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
+    if urAnswer:
+        guessingStudentName()
 
 teachers(inputRole)
 
