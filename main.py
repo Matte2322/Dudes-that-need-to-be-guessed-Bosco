@@ -51,8 +51,10 @@ def teachers(inputStuff):
         categoryTestDeparments = input("Are you an academic teacher or a tech teacher?: ")
         while True:
             if categoryTestDeparments == "academic teacher" or categoryTestDeparments == 'academic':
+                print("You're an academic teacher.")
                 break
-            elif categoryTestDeparments == 'tech teacher' or categoryTestDepartments == 'tech':
+            elif categoryTestDeparments == 'tech teacher' or categoryTestDeparments == 'tech':
+                print("You are a tech teacher.")
                 break
 
 teachers(inputRole)
