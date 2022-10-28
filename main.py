@@ -38,7 +38,7 @@ def students(inputStuff):
                 time.sleep(0.5)
                 print('.')
             guesses+=1
-            randomTech = random.sample(technologyDepartments, 1)
+            randomTech = random.choice(technologyDepartments, 1)
             answer = input('Is your technology ' + str(randomTech) + "?: ")
     print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
     guessingStudentName()
