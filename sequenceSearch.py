@@ -142,6 +142,9 @@ def juniorsFind():
         answer = input(f'Is your name {randomStudentJuniors1}?: ')
         if answer == 'y' or answer == 'yes':
           print(f"Yes, your name is {randomStudentJuniors1} and it took me {guesses} to find it. You're in the technology of IDEA and a junior.")
+          break
+        else:
+          continue
 
 
 def seniorsFind():
