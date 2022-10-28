@@ -60,8 +60,9 @@ def students(inputStuff):
             randomTech = random.sample(technologyDepartments, k=1)
             urAnswer = input('Is your technology ' + str(randomTech) + "?: ")
             print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
-    if urAnswer:
-        guessingStudentName()
+        if urAnswer:
+            guessingStudentName()
+
 
 teachers(inputRole)
 
