@@ -151,8 +151,15 @@ def juniorsFind():
         time.sleep(0.3)
         print('.')
       guesses+=1 
-      with open(''):
-        pass
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/MAT/juniors', 'r') as techJuniors2:
+        juniorsListMAT = [juniorsListMAT.rstrip() for juniorsListMAT in techJuniors2]
+        randomStudentJuniors2 = random.choice(juniorsListMAT)
+        answer = input(f"Is your name {randomStudentJuniors2}?: ")
+        if answer == 'yes' or answer == 'y':
+          print(f'Your name is {randomStudentJuniors2} and you belong in the technology MAT as a junior.')
+          break
+        else:
+          continue
 
 
 def seniorsFind():
