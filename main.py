@@ -60,9 +60,8 @@ def teachers(inputStuff):
             elif categoryTestDeparments == 'tech teacher' or categoryTestDeparments == 'tech':
                 print("You are a tech teacher.")
                 break
-                
-            if categoryTestDeparments:
-                guessingTeacherName()
+        if categoryTestDeparments:
+            guessingTeacherName()
 
 teachers(inputRole)
 
