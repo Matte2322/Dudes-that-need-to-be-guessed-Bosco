@@ -30,13 +30,13 @@ def guessingTeacherName():
         academicsFind()
 
 def students(inputStuff):
-    global answer
+    global testing
     global guesses
 
     technologyDepartments = ['ACE', 'CSEE', 'BMET', 'IDEA', 'MAT', 'MSET']
     if inputStuff == 's' or inputStuff == 'S' or inputStuff == 'Student' or inputStuff =='student':
         freshieTest = input("Are you a freshie?: ")
-        while answer != 'y':
+        while testing != 'y':
             if freshieTest == 'y' or freshieTest == 'yes':
                 print("Ew, a freshie.")
                 break
@@ -45,9 +45,9 @@ def students(inputStuff):
                 print('.')
             guesses+=1
             randomTech = random.sample(technologyDepartments, k=1)
-            answer = input('Is your technology ' + str(randomTech) + "?: ")
+            testing = input('Is your technology ' + str(randomTech) + "?: ")
             print('Wow, took me ' + str(guesses) + " guess(es) to find what tech you're in ")
-    if answer:
+    if testing:
         guessingStudentName()
 
 def teachers(inputStuff): 
