@@ -28,7 +28,7 @@ def spFind():
       guesses +=1 
       with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/CSEE/soph', 'r') as techSophomores:
         sophomoreListCSEE = [sophomoreListCSEE.rstrip() for sophomoreListCSEE in techSophomores]
-        randomStudentSophomore = random.choice(techSophomores)
+        randomStudentSophomore = random.choice(sophomoreListCSEE)
         answer = input('Is your name ' + randomStudentSophomore + "?: ")
         if answer == 'y' or answer=='yes':
           print(f"It took me {guesses} guess(es) to find your name is {randomStudentSophomore} and you're in the technology CSEE. You're a sophomore btw.")
@@ -125,10 +125,24 @@ def juniorsFind():
         randomStudentJuniors = random.choice(juniorsListCSEE)
         answer = input(f'Is your name {randomStudentJuniors}?: ')
         if answer == 'y' or answer=='yes':
-          print(f"Your name is {randomStudentJuniors} and it took me {guesses} guess(es) to find your name. Your tech is CSEE btw :>" )
+          print(
+            f"Your name is {randomStudentJuniors} and it took me {guesses} guess(es) to find your name. Your tech is CSEE btw :>. Just letting you know that you're a junior." 
+            )
           break
         else:
           continue
+  elif iForgor == 'IDEA':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1 
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/IDEA/juniors', 'r') as techJuniors1:
+        juniorsListIDEA = [juniorsListIDEA.rstrip() for juniorsListCSEE in techJuniors1]
+        randomStudentJuniors1 = random.choice(juniorsListIDEA)
+        answer = input(f'Is your name {randomStudentJuniors1}?: ')
+        if answer == 'y' or answer == 'yes':
+          print(f"Yes, your name is {randomStudentJuniors1} and it took me {guesses} to find it. You're in the technology of IDEA and a junior.")
 
 
 def seniorsFind():
