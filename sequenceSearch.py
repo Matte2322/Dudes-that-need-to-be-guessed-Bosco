@@ -145,6 +145,14 @@ def juniorsFind():
           break
         else:
           continue
+  elif iForgor == 'MAT':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1 
+      with open(''):
+        pass
 
 
 def seniorsFind():
