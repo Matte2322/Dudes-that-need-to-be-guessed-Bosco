@@ -175,7 +175,18 @@ def juniorsFind():
           break
         else:
           continue
-
+  elif iForgor == "BMET":
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1 
+      with open('/home/doormat/Documents/Dudes that need to be guessed Bosco/tech.txt/BMET/juniors', 'r') as techJuniors4:
+        juniorsListBMET = [juniorsListBMET.rstrip() for juniorsListBMET in techJuniors4]
+        randomStudentJunior4 = random.choice(juniorsListBMET)
+        answer = input(f"Is your name {randomStudentJunior4}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"Your name is {randomStudentJunior4} and you're a junior while being in BMET.")
 
 def seniorsFind():
   pass
