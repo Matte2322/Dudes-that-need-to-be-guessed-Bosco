@@ -1,5 +1,4 @@
 import random, time
-from unicodedata import category 
 from openFiles import *
 from sequenceSearch import *
 
