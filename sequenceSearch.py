@@ -207,7 +207,99 @@ def juniorsFind():
           continue
 
 def seniorsFind():
-  pass
+  guesses = 0
+  iForgor = input("Sorry, I forgor your tech, please input it again 😅: ")
+  if iForgor == 'CSEE':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses +=1 
+      with open('/home/doormat/Documents/Tech-Guessing-Game/Techs.txt/CSEE/senior', 'r') as techseniors:
+        seniorListCSEE =[seniorListCSEE.rstrip() for seniorListCSEE in techseniors]
+        randomStudentsenior = random.choice(seniorListCSEE)
+        answer = input('Is your name ' + randomStudentsenior + "?: ")
+        if answer == 'y' or answer=='yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentsenior} and you're in the technology CSEE. You're a senior btw.")
+          break
+        else:
+          continue
+  elif iForgor == 'IDEA':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses +=1 
+      with open('/home/doormat/Documents/Tech-Guessing-Game/Techs.txt/IDEA/senior', 'r') as techseniors1:
+        seniorListIDEA = [seniorListIDEA.rstrip() for seniorListIDEA in techseniors1]
+        randomStudentsenior1 = random.choice(seniorListIDEA)
+        answer = input('Is your name ' + randomStudentsenior1 + "?: ")
+        if answer == 'y' or answer=='yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentsenior1} and you're in the technology IDEA. You're a senior btw.")
+          break
+        else:
+          continue
+  elif iForgor == 'MAT':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3) 
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Tech-Guessiing-Game/Techs.txt/MAT/senior', 'r') as techseniors2:
+        seniorListMAT = [seniorListMAT.rstrip() for seniorListMAT in techseniors2]
+        randomStudentsenior2 = random.choice(seniorListMAT)
+        answer = input(f"Is your name {randomStudentsenior2}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentsenior2} and you're in the technology MAT. You're a senior btw.")
+          break
+        else: 
+          continue
+  elif iForgor == 'MSET':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3) 
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Tech-Guessing-Game/Techs.txt/MSET/senior', 'r') as techseniors3:
+        seniorListMSET = [seniorListMSET.rstrip() for seniorListMSET in techseniors3]
+        randomStudentsenior3 = random.choice(seniorListMSET)
+        answer = input(f"Is your name {randomStudentsenior3}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentsenior3} and you're in the technology MSET. You're a senior btw.")
+          break
+        else: 
+          continue
+  elif iForgor == 'BMET':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3) 
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Tech-Guessing-Game/Techs.txt/BMET/senior', 'r') as techseniors4:
+        seniorListBMET = [seniorListBMET.rstrip() for seniorListBMET in techseniors4]
+        randomStudentsenior4 = random.choice(seniorListBMET)
+        answer = input(f"Is your name {randomStudentsenior4}?: ")
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentsenior4} and you're in the technology BMET. You're a senior btw.")
+          break
+        else: 
+          continue
+  elif iForgor == 'ACE':
+    while True:
+      for wake in range(3):
+        time.sleep(0.3)
+        print('.')
+      guesses+=1
+      with open('/home/doormat/Documents/Tech-Guessing-Game/Techs.txt/ACE/senior', 'r') as techseniors5:
+        seniorListACE = [seniorListACE.rstrip() for seniorListACE in techseniors5]
+        randomStudentsenior5 = random.choice(seniorListACE)
+        answer = input(f'Is your name {randomStudentsenior5}?: ')
+        if answer == 'y' or answer == 'yes':
+          print(f"It took me {guesses} guess(es) to find your name is {randomStudentsenior5} and you're in the technology ACE. You're a senior btw.")
+          break
+        else: 
+          continue        
+          
 
 def academicsFind():
   pass
