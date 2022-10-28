@@ -302,7 +302,31 @@ def seniorsFind():
           
 
 def academicsFind():
-  pass
+  guesses = 0
+  while True:
+    for wake in range(3):
+      time.sleep(0.5)
+      print('.')
+    guesses+=1
+    randomAcademics = random.choice(academics)
+    answer = input(f"Is your name {randomAcademics}?: ")
+    if answer == 'yes' or answer == 'y':
+      print(f'It took me {guesses} guess(es) to determine your name is {randomAcademics}.')
+      break
+    else:
+      continue
 
 def techsFind():
-  pass
+  guesses = 0
+  while True:
+    for wake in range(3):
+      time.sleep(0.5)
+      print('.')
+    guesses+=1
+    randomTech = random.choice(techs)
+    answer = input(f"Is your name {randomTech}?: ")
+    if answer == 'yes' or answer == 'y':
+      print(f'It took me {guesses} guess(es) to determine your name is {randomTech}.')
+      break
+    else:
+      continue
