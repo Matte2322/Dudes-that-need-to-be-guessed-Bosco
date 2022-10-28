@@ -171,7 +171,7 @@ def juniorsFind():
         randomStudentJunior3 = random.choice(juniorsListMSET)
         answer = input(f'Is your name {randomStudentJunior3}?: ')
         if answer == 'yes' or answer == 'y':
-          print(f'Okay, your name is {randomStudentJunior3} and you\'re in the technology MSET. You\'re a junior, too. So I guess a W?')
+          print(f'Okay, your name is {randomStudentJunior3} while it took me {guesses} guess(es) to guess your name and you\'re in the technology MSET. You\'re a junior, too. So I guess a W?')
           break
         else:
           continue
@@ -186,7 +186,10 @@ def juniorsFind():
         randomStudentJunior4 = random.choice(juniorsListBMET)
         answer = input(f"Is your name {randomStudentJunior4}?: ")
         if answer == 'y' or answer == 'yes':
-          print(f"Your name is {randomStudentJunior4} and you're a junior while being in BMET.")
+          print(f"Your name is {randomStudentJunior4} and it took me {guesses} guess(es) to determine your name. You're a junior while being in BMET.")
+          break
+        else:
+          continue
 
 def seniorsFind():
   pass
